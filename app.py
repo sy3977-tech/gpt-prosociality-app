@@ -1,5 +1,9 @@
 import streamlit as st
+# Copyright (c) 2025 sy3977-tech
+# Licensed under the MIT License
+# Language Prosociality Predictor - Demo App
 
+import streamlit as st
 # Page configuration
 st.set_page_config(page_title="Language Prosociality Predictor", layout="wide")
 
