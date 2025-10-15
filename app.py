@@ -44,6 +44,7 @@ dependent_var_options = [
 ]
 
 selected_dependent_var = st.radio(
+    "",
     dependent_var_options,
     key="dependent_var"
 )
