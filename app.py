@@ -9,13 +9,13 @@ st.set_page_config(page_title="Language Prosociality Predictor", layout="wide")
 
 # Title and authors
 st.title("Demo: Predicting language prosociality using LLMs")
-st.markdown("**Rui Du et al. 2025**")
 
 # Introduction
 st.markdown("""
-This demo accompanies the paper *English as a Lingua Franca Promotes Non-native Consumer Donations* 
-and can be used for predicting experimental treatment effects on U.S. adults. 
-To manage costs of hosting this demo publicly, it uses GPT-4-mini.
+This demo accompanies the paper English as a Lingua Franca Promotes Non-native Consumer Donations (Du et al. 2025) and 
+can be used for predicting experimental treatment effects on U.S. adults. 
+To manage costs of hosting this demo publicly, it uses GPT-5-mini.
+
 """)
 
 st.markdown("---")
@@ -37,10 +37,10 @@ st.markdown("Choose an attitude or decision, to estimate a treatment effect.")
 
 dependent_var_options = [
     "How likely are you going to donate?",
-    "How likely are you going to share the donation appeal on social media?",
-    "How upsetting is this situation to you?",
-    "How sympathetic did you feel while reading the description of the cause?",
-    "How much do you feel it is your moral responsibility to help out with this cause?"
+    "How likely are you going to share the message on social media?",
+    "How sympathetic did you feel while reading the message?",
+    "How connected did you feel toward the beneficiary?"
+
 ]
 
 selected_dependent_var = st.radio(
