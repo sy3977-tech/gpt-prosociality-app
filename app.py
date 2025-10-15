@@ -23,7 +23,7 @@ st.markdown("---")
 # Section 1: Language Selection
 st.markdown("### 1. Select Language")
 language_options = ["English", "Mandarin", "Spanish", "Estonian", "Japanese", "Custom"]
-selected_language = st.selectbox("Choose a language:", language_options, key="language")
+selected_language = st.selectbox("", language_options, key="language")
 
 # Show custom input if "Custom" is selected
 if selected_language == "Custom":
@@ -44,7 +44,6 @@ dependent_var_options = [
 ]
 
 selected_dependent_var = st.radio(
-    "Select a dependent variable:",
     dependent_var_options,
     key="dependent_var"
 )
