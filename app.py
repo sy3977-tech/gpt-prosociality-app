@@ -14,7 +14,7 @@ st.title("Demo: Predicting language prosociality using LLMs")
 st.markdown("""
 This demo accompanies the paper English as a Lingua Franca Promotes Non-native Consumer Donations (Du et al. 2025) and 
 can be used for predicting experimental treatment effects on U.S. adults. 
-To manage costs of hosting this demo publicly, it uses GPT-4-mini.
+To manage costs of hosting this demo publicly, it uses GPT-5-mini.
 
 """)
 
