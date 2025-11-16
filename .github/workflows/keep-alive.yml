@@ -1,0 +1,22 @@
+name: Keep Streamlit App Active
+
+on:
+  schedule:
+    - cron: '0 */10 * * *'  # Runs every 10 hours
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Create empty commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit --allow-empty -m "Keep app active [skip ci]"
+          git push
